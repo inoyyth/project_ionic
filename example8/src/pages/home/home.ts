@@ -24,4 +24,10 @@ export class HomePage {
     }
   }
 
+  back() {
+    if (this.navCtrl.length() >= 2) {
+      this.navCtrl.pop();
+    }
+  }
+
 }

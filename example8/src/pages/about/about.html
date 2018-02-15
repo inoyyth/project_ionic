@@ -14,5 +14,22 @@
 
 
 <ion-content padding>
-
+  <ion-card>
+    <ion-card-header>
+      About Page
+    </ion-card-header>
+    <ion-card-content>
+      <button ion-button icon-left small (click)="gotoPage('home')">
+        <ion-icon name="home"></ion-icon>
+        About
+      </button>
+      <button ion-button icon-left small (click)="gotoPage('contact')">
+        <ion-icon name="contacts"></ion-icon>
+        Contact
+      </button>
+      <button ion-button icon-only small (click)="back()">
+        <ion-icon name="undo"></ion-icon>
+      </button>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
